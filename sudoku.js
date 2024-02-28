@@ -1,3 +1,5 @@
+// Write a program that will solve simple sudoku
+
 function solveSudoku(board) {
   const emptyCell = findEmptyCell(board);
 
