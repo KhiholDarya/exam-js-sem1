@@ -41,14 +41,24 @@ function findHeavyBallIndex(balls) {
       indexOfHeaviestBall = i;
     }
   }
-
+ console.log(`Index of the heavy ball: ${indexOfHeaviestBall}`)
   return indexOfHeaviestBall;
 }
 
 // Example usage
 const balls = [1, 2, 1, 1, 1, 1, 1, 1];
-const heavyBallIndex = findHeavyBallIndex(balls);
+const balls2 = [1, 1, 1, 1, 1, 1, 1, 1];
+const balls3 = [1, 1, 1, 2, 1, 1, 1, 1];
+const balls4 = [1, 1, 1, 1, 1, 1, 2, 1];
+const balls5 = [2, 1, 1, 1, 1, 1, 1, 1];
 
-if (heavyBallIndex !== null) {
-  console.log(`Index of the heavy ball: ${heavyBallIndex}`);
-}
+const heavyBallIndex = findHeavyBallIndex;
+
+heavyBallIndex(balls);
+heavyBallIndex(balls2);
+heavyBallIndex(balls3);
+heavyBallIndex(balls4);
+heavyBallIndex(balls5);
+
+
+
